@@ -31,7 +31,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     export DEFAULT_USER=mlobur
     alias cask='brew cask'
     alias fk='fuck'
-    eval $(thefuck --alias)
+    #eval $(thefuck --alias)
     source /usr/local/bin/virtualenvwrapper.sh
 
     # Shell helpers
