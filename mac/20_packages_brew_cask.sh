@@ -40,5 +40,7 @@ brew cask install vlc
 #brew cask install yujitach-menumeters
 #brew cask install zoomus
 
-#cask install sidestep # Securing public wifi
-#cask install transmit # FTP client
+#brew cask install sidestep # Securing public wifi
+#brew cask install transmit # FTP client
+
+brew cask install whatsapp
