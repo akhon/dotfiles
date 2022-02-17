@@ -8,8 +8,8 @@ esac
 HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
-HISTSIZE=10000
-HISTFILESIZE=5000
+HISTSIZE=100000
+HISTFILESIZE=10000
 
 # check the window size after each command
 shopt -s checkwinsize
