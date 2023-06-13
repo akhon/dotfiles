@@ -2,47 +2,41 @@
 
 brew tap caskroom/cask
 
-brew cask install 1password
-brew cask install adium
-#brew cask install aerial  # apple tv screensaver
-#brew cask install avibrazil-rdm  # hack mac screen resolution
-brew cask install appcleaner
-brew cask install balenaetcher
-brew cask install clipy
-brew cask install daisydisk
-brew cask install docker
-brew cask install dropbox
-brew cask install evernote
-brew cask install gitup
-brew cask install google-chrome
-brew cask install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
-brew cask install haptickey
-brew cask install iterm2
-brew cask install keybase
-brew cask install ngrok
-brew cask install openoffice
-brew cask install opera
-brew cask install osxfuse && brew install sshfs
-brew cask install pgadmin4
-brew cask install pock
-brew cask install pycharm-ce
-brew cask install p4v
-brew cask install scroll-reverser
-brew cask install skype
-brew cask install slack
-brew cask install spotify
-brew cask install spotmenu
-brew cask install spectacle
-brew cask install the-unarchiver
-brew cask install telegram
-brew cask install tor-browser
-brew cask install tunnelbear
-brew cask install tunnelblick
-#brew cask install virtualbox
-#brew cask install virtualbox-extension-pack
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install yujitach-menumeters
-brew cask install zoomus
-#cask install sidestep # Securing public wifi
-#cask install transmit # FTP client
+brew install 1password --cask
+brew install adium --cask
+brew install appcleaner --cask
+brew install balenaetcher --cask
+brew install clipy --cask
+brew install daisydisk --cask
+brew install docker --cask
+brew install dropbox --cask
+brew install evernote --cask
+brew install gitup --cask
+brew install google-chrome --cask
+brew install gpg-suite --cask && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
+brew install haptickey --cask
+brew install iterm2 --cask
+brew install keybase --cask
+brew install ngrok --cask
+brew install openoffice --cask
+brew install opera --cask
+brew install osxfuse --cask && brew install sshfs --cask
+brew install pgadmin4 --cask
+brew install pock --cask
+brew install pycharm-ce --cask
+brew install p4v --cask
+brew install scroll-reverser --cask
+brew install skype --cask
+brew install slack --cask
+brew install spotify --cask
+brew install spotmenu --cask
+brew install spectacle --cask
+brew install the-unarchiver --cask
+brew install telegram --cask
+brew install tor-browser --cask
+brew install tunnelbear --cask
+brew install tunnelblick --cask
+brew install visual-studio-code --cask
+brew install vlc --cask
+brew install yujitach-menumeters --cask
+brew install zoomus --cask
