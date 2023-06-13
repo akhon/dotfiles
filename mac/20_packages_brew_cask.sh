@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 brew install 1password --cask
 brew install adium --cask
