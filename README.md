@@ -12,15 +12,15 @@ Zero friction mac and linux bootstrap
 ## macOS
 ```
 mkdir ~/git && cd ~/git
-git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
-git remote set-url origin git@github.com:max-lobur/dotfiles.git  # ssh push later
+git clone https://github.com/akhon/dotfiles.git && cd dotfiles
+git remote set-url origin git@github.com:akhon/dotfiles.git  # ssh push later
 ./init_mac.sh
 ```
 
 ## CentOS
 ```
 sudo yum -y install git
-git clone https://github.com/max-lobur/dotfiles.git && cd dotfiles
+git clone https://github.com/akhon/dotfiles.git && cd dotfiles
 ./init_centos.sh
 ```
 
