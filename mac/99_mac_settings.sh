@@ -39,17 +39,12 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock expose-animation-duration -float 0.1;
 killall Dock # restart
 
-# Install Command Line Tools for Xcode
-touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-sudo softwareupdate -ai
-rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-
 #Store screenshots in subfolder on desktop
 # mkdir ~/Desktop/Screenshots
 # defaults write com.apple.screencapture location ~/Desktop/Screenshots
 
 #Keep Mac from writing .DS_Store files to network drives.
-#defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 echo "Reboot to apply KeyRepeat settings."
 echo " ------------------ DONE Applying macOS settings... --------------------"
