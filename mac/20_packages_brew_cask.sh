@@ -2,6 +2,7 @@
 
 brew tap homebrew/cask
 brew install balenaetcher --cask
+brew install chatgpt --cask
 brew install docker --cask
 brew install dropbox --cask
 brew install gpg-suite --cask && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
