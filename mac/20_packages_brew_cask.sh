@@ -22,4 +22,5 @@ brew install telegram --cask
 brew install visual-studio-code --cask
 brew install vlc --cask
 brew install yujitach-menumeters --cask
+brew install usr-sse2-rdm --cask
 brew install zoomus --cask
