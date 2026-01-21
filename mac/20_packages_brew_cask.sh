@@ -8,6 +8,7 @@ brew install gpg-suite --cask && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailb
 brew install haptickey --cask
 brew install iterm2 --cask
 brew install keybase --cask
+brew install muteme --cask
 brew install ngrok --cask
 brew install openoffice --cask
 brew install osxfuse --cask && brew install sshfs --cask
