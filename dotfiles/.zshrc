@@ -25,8 +25,10 @@ function diff {
      colordiff -u "$@" | less
 }
 
+# aliases
+alias tmux='tmux -u'
+
 # k8s PS1
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 export KUBE_PS1_SYMBOL_ENABLE=false
 export KUBE_PS1_PREFIX=' ['
 export KUBE_PS1_SUFFIX=']'
@@ -39,7 +41,7 @@ prompt_git() {
   local PL_BRANCH_CHAR
   () {
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
-    PL_BRANCH_CHAR=$'\ue0a0'         # 
+    PL_BRANCH_CHAR=$'\ue0a0'         #
   }
   local ref
   if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
@@ -62,8 +64,6 @@ local pythonenv='`[ -z "$VIRTUAL_ENV" ] || echo "(${VIRTUAL_ENV##*/}) "`'
 local kubeenv='' #local kubeenv='`[ -z "$KUBECONFIG" ] || kube_ps1`'
 local git='%F{2}`prompt_git`%f%b'
 
-#PROMPT=" ╭─${pythonenv}${current_dir}${git}${kubeenv}
-# ╰─ᐅ "
 PROMPT="%B%F{1}❯%F{3}❯%F{2}❯%f%b ${pythonenv}${current_dir}${git}${kubeenv} ❯ "
 
 function iterm2_print_user_vars() {
@@ -73,6 +73,6 @@ function iterm2_print_user_vars() {
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.commonshellrc
-source ~/.vgsrc
 
-export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/config.bak" # temp
+# Cargo/Rust
+[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"

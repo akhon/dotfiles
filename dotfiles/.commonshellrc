@@ -1,8 +1,6 @@
 alias cl='clear'
-alias vag='vagrant'
 alias ll='ls -alFh'
 alias json-refmt='python -m json.tool'
-alias mc='mc -b'
 alias watch='watch ' # watch to see all other aliases
 alias tcurl='curl -w "\n    time_namelookup:  %{time_namelookup}\n       time_connect:  %{time_connect}\n    time_appconnect:  %{time_appconnect}\n   time_pretransfer:  %{time_pretransfer}\n      time_redirect:  %{time_redirect}\n time_starttransfer:  %{time_starttransfer}\n -------------------  ----------------\n         time_total:  %{time_total}\n\n"'
 alias pingg='ping g.co -c5'
@@ -11,12 +9,6 @@ alias cheat='function _cheat() { curl https://cht.sh/$1; }; _cheat'
 
 alias ansible="ansible -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
 alias ansible-playbook="ansible-playbook -e 'ansible_python_interpreter=\"/usr/bin/env python\"'"
-#alias tf="terraform"
-#alias tg="terragrunt"
-#alias k="kubectl"
-#alias kctx="kubectx"
-#alias kns="kubens"
-alias kb="keybase"
 
 # virtualenvwrapper homedir
 export WORKON_HOME=~/venvs
@@ -40,17 +32,13 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 ### MAC
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    alias cask='brew cask'
     alias htop='sudo htop'
     alias fk='fuck'
     alias kfwd='sudo kubefwd svc -n'
     eval $(thefuck --alias)
-    export VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python2'
-    source /usr/local/bin/virtualenvwrapper.sh
-    source /usr/local/etc/profile.d/z.sh
 
     # Shell helpers
-    export PATH=$PATH:~/git/dotfiles/sh:~/Dropbox/shell_helpers
+    export PATH=$PATH:~/git/dotfiles/sh
 
     # Go Envs
     export GOPATH=$HOME/go

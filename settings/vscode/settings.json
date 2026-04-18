@@ -1,42 +1,8 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 100,
-    "terminal.integrated.shell.osx": "/usr/local/bin/bash",
-    "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": false,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": false,
-    "explorer.openEditors.visible": 0,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.currentLine.enabled": false,
-    "editor.codeLens": false,
-    "editor.scrollBeyondLastLine": false,
-    "window.title": "${rootName}",
-    "editor.suggestSelection": "recentlyUsedByPrefix",
-    "workbench.colorTheme": "Quiet Light",
-    "python.venvFolders": [
-        "envs",
-        ".pyenv",
-        ".direnv",
-      ],
-    "python.autoComplete.addBrackets": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "terraform.format": {
-        "enable": true,
-        "ignoreExtensionsOnSave": [
-          ".tfsmurf"
-        ],
-        "formatOnSave": false
-      },
-      "gitlens.historyExplorer.enabled": true,
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "window.autoDetectColorScheme": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "explorer.confirmDragAndDrop": false,
+    "claudeCode.preferredLocation": "panel"
 }

@@ -8,20 +8,19 @@ git config --global core.editor "vi"
 git config --global core.filemode true
 git config --global color.ui true
 git config --global push.default simple
+git config --global push.autoSetupRemote true
 git config --global pull.ff only
-
-git config --global gitreview.scheme=ssh
-git config --global gitreview.username=akhon
 
 git config --global alias.br "! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
 git config --global alias.branchdate "!git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--'"
 
-
-### MAC
+### MAC - SSH commit signing
 if [[ "$OSTYPE" == "darwin"* ]]; then
-git config --global user.signingkey 4411A6B6
+git config --global user.signingkey ~/.ssh/github_signing_key.pub
+git config --global gpg.format ssh
 git config --global gpg.program gpg
 git config --global commit.gpgsign true
+git config --global tag.gpgSign true
 fi
 
 # check

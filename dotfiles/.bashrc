@@ -28,4 +28,6 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 source ~/.commonshellrc
-source ~/.vgsrc
+
+# Cargo/Rust
+[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
